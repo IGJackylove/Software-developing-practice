@@ -166,7 +166,7 @@ h2 {
 #main_profile{
     display: flex;
     justify-content: space-between;
-    gap: 70px;
+    gap: 40px;
     align-items: center;
     width: 820px;
     height: 526px;
@@ -174,7 +174,7 @@ h2 {
 /* header=10vh, footer = 16vh. Maincontainer = 84vh. 一半是42vh */
     top: calc(10vh + 42vh); 
     left: 40vw;
-    /* 这里是25%的原因是 profile_left占据百分之50的宽度,他的百分之50是main_profile的25% */
+    /* 375的二分之一除以总宽度得出的百分比*/
     transform: translate(-22.865%, -50%);
 }
 
@@ -264,8 +264,45 @@ h2 {
 }
 
 #right_subtitle{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
+}
+
+#button_zone {
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#button_resume {
+    background-color: var(--theme-color-green);
+    padding: 10px 30px;
+    border-radius: 50px;
+    width: 140px;
+    color: white;
+}
+
+#button_projects {
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    width: 140px;
+}
+
+.profile_intro {
+    width: 430px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 
