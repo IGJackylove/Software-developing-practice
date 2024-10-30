@@ -105,14 +105,14 @@ header {
 
 
 /******************** Header_list（页面切换文字）************************/
-.header_list {
+#header_list {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
     /* Vertically center the items */
 }
 
-.header_list li {
+#header_list li {
     float: left;
     /*使得list内容横向排列, 并且从左到右 */
     padding: 5px 25px;
@@ -302,7 +302,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 
