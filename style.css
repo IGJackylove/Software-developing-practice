@@ -281,13 +281,19 @@ h2 {
     margin-top: 30px;
 }
 
-#button_resume {
+.button {
     background-color: var(--theme-color-green);
     padding: 10px 30px;
     border-radius: 50px;
-    width: 140px;
     color: white;
+    /* 使得button自适应文字宽度 */
+    display: inline-block; 
 }
+
+#index_resume {
+    width: 140px;
+}
+
 
 #button_projects {
     border: 1px solid black;
@@ -349,4 +355,66 @@ h2 {
     font-weight: 300;
 }
 
+/**************************************Resume HTML page***********************************************/
+/**********resume_substitle**************/
+#main_container {
+    background-color: #e4cea5;
+    width: 100 vh;
+    height: 100 vw;
+}
+
+#resume_body{
+    width: 50vw; /* 设置为80%视口宽度 */
+    left: 25vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 使内容水平居中 */
+    padding-top: 50px;  /* 给顶部留出空间，避免title和subtitle紧挨着顶部 */
+    
+}
+
+
+#resume_title {
+    font-size: 30px;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    
+
+}
+
+#resume_title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-140%);
+    left: 0;
+    width: 20px; /* 自定义标记点的宽度 */
+    height: 20px; /* 自定义标记点的高度 */
+    background-color: var(--theme-color-green); /* 自定义标记点的颜色 */
+    display: inline-block;
+}
+
+#resume_subtitle {
+    width: 100%; /*需要设置100%来使得容器宽度和父类容器等宽, 不然则为内容宽度 */
+    display: flex; 
+    justify-content:space-between;
+    align-items: center; /*垂直居中*/
+    margin-top: 80px; /* 给subtitle添加一些间距 */
+    margin-bottom:  50px;
+}
+
+#resume_subtitle_experience {
+    font-family:'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.resume_experience {
+    padding: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6))
+}
 
