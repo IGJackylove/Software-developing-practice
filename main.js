@@ -9,7 +9,8 @@ const map = new Map({
   target: 'map',
   layers: [
     new TileLayer({
-      source: new OSM()
+      source: new OSM({
+      })
     })
   ],
   view: new View({
