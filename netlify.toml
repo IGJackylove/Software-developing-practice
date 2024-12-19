@@ -1,0 +1,8 @@
+[build]
+  publish = "dist"  # 指定构建后的发布目录为 dist
+  command = "npm run dev"  # 使用 npm run build 构建项目
+
+[[redirects]]
+  from = "/"
+  to = "/my-app/index.html"  # 指定从根目录读取 index.html 的路径
+  status = 200
