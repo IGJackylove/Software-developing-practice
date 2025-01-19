@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "netlify deploy --prod",
     "serve": "vite preview"
   },
   "devDependencies": {
     "vite": "^6.0.7"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "glob": "^11.0.1",
-    "ol": "latest"
+    "netlify-cli": "^18.0.1",
+    "ol": "latest",
+    "serverless-http": "^3.2.0"
   }
 }

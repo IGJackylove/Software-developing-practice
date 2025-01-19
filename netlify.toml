@@ -1,0 +1,5 @@
+[build]
+    function = "functions"
+
+[dev]
+    publish = "dist"
