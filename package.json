@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.21.2",
     "glob": "^11.0.1",
-    "netlify-cli": "^18.0.1",
+    "netlify-cli": "^18.0.3",
     "ol": "latest",
     "serverless-http": "^3.2.0"
   }
